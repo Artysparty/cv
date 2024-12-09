@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+</head>
+<body>
+    <div class="digital-rain"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Артем Козлов</h1>
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/my-photo.jpg" alt="Фото профиля" id="profile-photo">
+                </div>
+                <div class="intro">
+                    <div class="title">Frontend Developer</div>
+                    <p class="intro-text">
+                        Привет! Меня зовут Артем и я... Frontend разработчик! 
+                        За 4 года коммерческой разработки я создал множество успешных проектов, специализируюсь на разработке 
+                        сложных корпоративных CRM-систем и веб-приложений, но также могу создать и продвинуть ваш сайт-визитку, 
+                        рекламный лендинг или интернет-магазин.
+                    </p>
+                    <div class="key-points">
+                        <div class="key-point">
+                            <span class="point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </span>
+                            <span class="point-text">Высшее образование в сфере разработки ПО</span>
+                        </div>
+                        <div class="key-point">
+                            <span class="point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                            </span>
+                            <span class="point-text">4 года коммерческой разработки</span>
+                        </div>
+                        <div class="key-point">
+                            <span class="point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 19V5M5 12l7-7 7 7"/>
+                                </svg>
+                            </span>
+                            <span class="point-text">Опыт работы с современным стеком технологий</span>
+                        </div>
+                        <div class="key-point">
+                            <span class="point-icon point-icon-text">AI</span>
+                            <span class="point-text">Активное использование нейросетей</span>
+                        </div>
+                        <div class="key-point">
+                            <span class="point-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </span>
+                            <span class="point-text">Высокая скорость и качество работы</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary">Связаться со мной</a>
+                        <a href="#services" class="btn secondary">Мои услуги</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="experience">
+                    <h3>Опыт работы</h3>
+                    <p>4 года работы в качестве фронтенд-разработчика с фокусом на создании и оптимизации CRM-систем. Высшее образование в сфере разработки программного обеспечения.</p>
+                </div>
+                
+                <div class="skills">
+                    <h3>Технический стек</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Основные технологии</h4>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-js"></i>
+                                        <span class="skill-name">JavaScript/<br>TypeScript</span>
+                                    </div>
+                                    <span class="skill-level">9/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-angular"></i>
+                                        <span class="skill-name">Angular</span>
+                                    </div>
+                                    <span class="skill-level">8/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-react"></i>
+                                        <span class="skill-name">React</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-node-js"></i>
+                                        <span class="skill-name">NextJS</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-html5"></i>
+                                        <span class="skill-name">HTML/CSS</span>
+                                    </div>
+                                    <span class="skill-level">9/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-node"></i>
+                                        <span class="skill-name">NodeJS</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fas fa-server"></i>
+                                        <span class="skill-name">NestJS</span>
+                                    </div>
+                                    <span class="skill-level">6/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-docker"></i>
+                                        <span class="skill-name">Docker</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Backend & DevOps</h4>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-node"></i>
+                                        <span class="skill-name">NodeJS</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fas fa-server"></i>
+                                        <span class="skill-name">NestJS</span>
+                                    </div>
+                                    <span class="skill-level">6/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-docker"></i>
+                                        <span class="skill-name">Docker</span>
+                                    </div>
+                                    <span class="skill-level">7/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fas fa-dharmachakra"></i>
+                                        <span class="skill-name">Kubernetes</span>
+                                    </div>
+                                    <span class="skill-level">6/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Дополнительные навыки</h4>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-java"></i>
+                                        <span class="skill-name">Java</span>
+                                    </div>
+                                    <span class="skill-level">5/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <span class="point-icon-text">C#</span>
+                                        <span class="skill-name">C#</span>
+                                    </div>
+                                    <span class="skill-level">5/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-name-with-icon">
+                                        <i class="fab fa-golang"></i>
+                                        <span class="skill-name">Golang</span>
+                                    </div>
+                                    <span class="skill-level">4/10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Мои услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Сайт-визитка</h3>
+                    <p>Создание современного персонального или корпоративного сайта-визитки с уникальным дизайном.</p>
+                    <ul>
+                        <li>Адаптивный дизайн</li>
+                        <li>Анимации и интерактивность</li>
+                        <li>SEO-оптимизация</li>
+                        <li>Форма обратной связи</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Рекламный лендинг</h3>
+                    <p>Разработка продающих одностраничных сайтов для продвижения товаров и услуг.</p>
+                    <ul>
+                        <li>Продающая структура</li>
+                        <li>A/B тестирование</li>
+                        <li>Интеграция с CRM</li>
+                        <li>Аналитика конверсий</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Интернет-магазин</h3>
+                    <p>Создание полнофункционального интернет-магазина с современным интерфейсом.</p>
+                    <ul>
+                        <li>Каталог товаров</li>
+                        <li>Корзина и оформление заказа</li>
+                        <li>Личный кабинет</li>
+                        <li>Интеграция с платёжными системами</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Telegram боты</h3>
+                    <p>Разработка автоматизированных ботов для бизнеса и личного использования.</p>
+                    <ul>
+                        <li>Автоматизация процессов</li>
+                        <li>Интеграция с API</li>
+                        <li>Уведомления и рассылки</li>
+                        <li>Аналитика использования</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>SEO оптимизация</h3>
+                    <p>Оптимизация сайта для повышения видимости в поисковых системах.</p>
+                    <ul>
+                        <li>Увеличение трафика</li>
+                        <li>Привлечение новых клиентов</li>
+                        <li>Повышение конверсии</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-header">
+                        <h3>Давайте обсудим ваш проект</h3>
+                        <p>Готов помочь в реализации ваших идей. Выберите удобный способ связи или заполните форму.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p>artyom.kozlov.2000@bk.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-telegram"></i>
+                            <div class="method-details">
+                                <h4>Telegram</h4>
+                                <p>@artyom_kozlov</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div class="method-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/artyom-kozlov</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-availability">
+                        <div class="availability-indicator"></div>
+                        <p>Доступен для новых проектов</p>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <input type="text" id="subject" name="subject" required autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Сайт-визитка. Все права защищены.</p>
+    </footer>
+
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-content">
+            <div class="alert-icon"></div>
+            <div class="alert-message"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
