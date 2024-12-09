@@ -71,7 +71,7 @@
                             <span class="point-text">Опыт работы с современным стеком технологий</span>
                         </div>
                         <div class="key-point">
-                            <span class="point-icon point-icon-text">AI</span>
+                            <div class="point-icon point-icon-text point-icon-text__ai">AI</div>
                             <span class="point-text">Активное использование нейросетей</span>
                         </div>
                         <div class="key-point">
@@ -302,17 +302,17 @@
         <section id="services">
             <h2>Мои услуги</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-service="Сайт-визитка">
                     <h3>Сайт-визитка</h3>
                     <p>Создание современного персонального или корпоративного сайта-визитки с уникальным дизайном.</p>
                     <ul>
                         <li>Адаптивный дизайн</li>
                         <li>Анимации и интерактивность</li>
                         <li>SEO-оптимизация</li>
-                        <li>Форма обратной связи</li>
+                        <li>Форма обратной св��зи</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-service="Рекламный лендинг">
                     <h3>Рекламный лендинг</h3>
                     <p>Разработка продающих одностраничных сайтов для продвижения товаров и услуг.</p>
                     <ul>
@@ -322,7 +322,7 @@
                         <li>Аналитика конверсий</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-service="Интернет-магазин">
                     <h3>Интернет-магазин</h3>
                     <p>Создание полнофункционального интернет-магазина с современным интерфейсом.</p>
                     <ul>
@@ -332,7 +332,7 @@
                         <li>Интеграция с платёжными системами</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-service="Telegram боты">
                     <h3>Telegram боты</h3>
                     <p>Разработка автоматизированных ботов для бизнеса и личного использования.</p>
                     <ul>
@@ -342,7 +342,7 @@
                         <li>Аналитика использования</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-service="SEO оптимизация">
                     <h3>SEO оптимизация</h3>
                     <p>Оптимизация сайта для повышения видимости в поисковых системах.</p>
                     <ul>
@@ -367,23 +367,33 @@
                             <i class="fas fa-envelope"></i>
                             <div class="method-details">
                                 <h4>Email</h4>
-                                <p>artyom.kozlov.2000@bk.ru</p>
+                                <div class="email-container">
+                                    <p>artyom.kozlov.2000@bk.ru</p>
+                                    <button class="copy-button" title="Копировать email">
+                                        <i class="far fa-copy"></i>
+                                        <span class="copy-tooltip">Скопировано!</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-telegram"></i>
-                            <div class="method-details">
-                                <h4>Telegram</h4>
-                                <p>@artyom_kozlov</p>
+                        <a href="https://t.me/yimiter" target="_blank" class="contact-method-link">
+                            <div class="contact-method">
+                                <i class="fab fa-telegram"></i>
+                                <div class="method-details">
+                                    <h4>Telegram</h4>
+                                    <p>@yimiter</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div class="method-details">
-                                <h4>GitHub</h4>
-                                <p>github.com/artyom-kozlov</p>
+                        </a>
+                        <a href="https://github.com/Artysparty" target="_blank" class="contact-method-link">
+                            <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <div class="method-details">
+                                    <h4>GitHub</h4>
+                                    <p>github.com/Artysparty</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="contact-availability">
                         <div class="availability-indicator"></div>
@@ -404,7 +414,25 @@
                         
                         <div class="form-group">
                             <label for="subject">Тема</label>
-                            <input type="text" id="subject" name="subject" required autocomplete="off">
+                            <div class="custom-select">
+                                <div class="select-selected" tabindex="0">Выберите тему</div>
+                                <div class="select-items">
+                                    <div class="select-item" data-value="">Выберите тему</div>
+                                    <div class="select-item" data-value="Сайт-визитка">Сайт-визитка</div>
+                                    <div class="select-item" data-value="Рекламный лендинг">Рекламный лендинг</div>
+                                    <div class="select-item" data-value="Интернет-магазин">Интернет-магазин</div>
+                                    <div class="select-item" data-value="Telegram боты">Telegram боты</div>
+                                    <div class="select-item" data-value="SEO оптимизация">SEO оптимизация</div>
+                                </div>
+                                <select id="subject" name="subject" required style="display: none;">
+                                    <option value="">Выберите тему</option>
+                                    <option value="Сайт-визитка">Сайт-визитка</option>
+                                    <option value="Рекламный лендинг">Рекламный лендинг</option>
+                                    <option value="Интернет-магазин">Интернет-магазин</option>
+                                    <option value="Telegram боты">Telegram боты</option>
+                                    <option value="SEO оптимизация">SEO оптимизация</option>
+                                </select>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -412,7 +440,7 @@
                             <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
                         </div>
                         
-                        <button type="submit" class="btn primary">Отправить</button>
+                        <button type="submit" class="btn primary">Отправить в Telegram</button>
                     </form>
                 </div>
             </div>
